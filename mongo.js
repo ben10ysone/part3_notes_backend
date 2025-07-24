@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 
 // const password = process.argv[2]
 
-const url = "mongodb+srv://arnavgg458:qlCQEnDeGdJ6fvES@cluster0.fknuy9s.mongodb.net/noteApp?retryWrites=true&w=majority&appName=cluster0"
+const url = 'mongodb+srv://arnavgg458:qlCQEnDeGdJ6fvES@cluster0.fknuy9s.mongodb.net/noteApp?retryWrites=true&w=majority&appName=cluster0'
 
 mongoose.set('strictQuery',false)
 
@@ -30,7 +30,7 @@ const Note = mongoose.model('Note', noteSchema)
 //   mongoose.connection.close()
 // })
 
-Note.find({important:false}).then(result => {
+Note.find({ important:false }).then(result => {
   result.forEach(note => {
     console.log(note)
   })
