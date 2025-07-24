@@ -7,7 +7,7 @@
     "dev": "node --watch index.js",
     "build:ui": "rm -rf dist && cd ../part2_notes_frontend && npm run build && cp -r dist ../part3_notes_backend",
     "deploy:full": "npm run build:ui && cd ../part3_notes_backend && read -p 'Enter commit message: ' msg && git add . && git commit -m \"$msg\" && git push",
-    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "test": "node --test",
     "lint": "eslint ."
   },
   "author": "Arnav Goel",
