@@ -36,7 +36,3 @@ module.exports = {
   notesInDb,
   usersInDb,
 }
-
-module.exports = {
-  initialNotes, nonExistingId, notesInDb, usersInDb
-}
